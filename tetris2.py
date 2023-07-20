@@ -86,10 +86,8 @@ class TetrisApp(object):
         self.height = config['cell_size'] * config['rows']
 
         self.screen = pygame.display.set_mode((self.width, self.height))
-        pygame.event.set_blocked(pygame.MOUSEMOTION)  # We do not need
-        # mouse movement
-        # events, so we
-        # block them.
+        # We do not need mouse movement events, so we block them.
+        pygame.event.set_blocked(pygame.MOUSEMOTION)
         self.init_game()
 
     def new_stone(self):
