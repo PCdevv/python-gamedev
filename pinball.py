@@ -5,8 +5,8 @@ import random
 pygame.init()
 
 # Ukuran layar
-screen_width = 800
-screen_height = 600
+screen_width = 1280
+screen_height = 720
 
 # Warna RGB
 black = (0, 0, 0)
@@ -18,17 +18,17 @@ screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption("Catch the Bouncing Ball")
 
 # Posisi awal pemain
-player_width = 100
+player_width = 10000
 player_height = 20
 player_x = (screen_width - player_width) // 2
 player_y = screen_height - player_height
 
 # Posisi awal bola
-ball_radius = 15
+ball_radius = 70
 ball_x = random.randint(ball_radius, screen_width - ball_radius)
 ball_y = 50
-ball_speed_x = 5
-ball_speed_y = 5
+ball_speed_x = 21
+ball_speed_y = 21
 
 # Skor awal
 score = 0
